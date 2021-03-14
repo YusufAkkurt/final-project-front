@@ -1,0 +1,12 @@
+<div class="list-group mt-4 rounded-0">
+    <div class="list-group-item list-group-item-action bg-light fw-bold">Kategoriler</div>
+
+    <button *ngFor="let category of categories" (click)="setCurrentCategory(category)"
+    routerLink="products/category/{{ category.categoryId }}" [class]="getCurrentCategoryClass(category)">
+        {{ category.categoryName }}
+    </button>
+
+    <button routerLink="products" class="list-group-item list-group-item-action bg-light fw-bold">
+        Tüm Ürünler
+    </button>
+</div>
