@@ -1,0 +1,32 @@
+<div class="card mt-4 rounded-0">
+    <div class="card-header fw-bold">Ürün Ekle</div>
+    <div class="card-body">
+        <form [formGroup]="productAddForm">
+            <div class="mb-3">
+                <input type="text" class="form-control rounded-0"
+                formControlName="productName" placeholder="Ürün adını giriniz">
+            </div>
+
+            <div class="mb-3">
+                <input type="number" class="form-control rounded-0"
+                formControlName="categoryId" placeholder="Kategori id'sini giriniz">
+            </div>
+
+            <div class="mb-3">
+                <input type="number" class="form-control rounded-0"
+                formControlName="unitsInStock" placeholder="Stok adedini giriniz">
+            </div>
+
+            <div class="mb-3">
+                <input type="number" class="form-control rounded-0"
+                formControlName="unitPrice" placeholder="Fiyatını giriniz">
+            </div>
+
+            <div class="text-end">
+                <button type="submit" class="btn btn-primary rounded-0 px-4" (click)="add()">
+                    Ekle
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
