@@ -1,0 +1,23 @@
+<body class="text-center">
+    <main class="form-signin">
+        <form autocomplete="off" [formGroup]="loginForm">
+            <h1 class="h3 mb-3 fw-normal">Giriş yap</h1>
+
+            <div class="form-floating">
+                <input type="email" class="form-control" formControlName="email" id="email" placeholder=" ">
+                <label for="email">E-Posta</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="password" class="form-control" formControlName="password" id="password" placeholder=" ">
+                <label for="password">Parola</label>
+            </div>
+
+            <button class="w-100 btn btn-lg btn-primary" (click)="login()" routerLink="/products">
+                Giriş yap
+            </button>
+
+            <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+        </form>
+    </main>
+</body>
